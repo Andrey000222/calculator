@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+#define pressb {cout << "¬ведите 2 число" << endl; cin >> b;}
 int main()
 {
     setlocale(LC_ALL, "");
@@ -12,52 +13,44 @@ int main()
     cin >> c ;
     switch (c){
         case '+':{
-            cout << "¬ведите 2 число" << endl;
-            cin >> b;
+            pressb;
             cout << "(a+b)= " << (a + b) << endl;
             break;
         }
         case '-':{
-            cout << "¬ведите 2 число" << endl;
-            cin >> b;
+            pressb
             cout << "(a-b)= " << (a - b) << endl;
             break;
         }
         case '*':{
-            cout << "¬ведите 2 число" << endl;
-            cin >> b;
+            pressb
             cout << "(a*b)= " << (a * b) << endl;
             break;
         }
         case '/':{
-            cout << "¬ведите 2 число" << endl;
-            cin >> b;
+            pressb
             d = a;
             e = b;
             cout << "(a/b)= " << (d / e) << endl;
             break;
         }
         case '&':{
-            cout << "¬ведите 2 число" << endl;
-            cin >> b;
+            pressb
             std::cout << "(a&b)= " << (a & b) << endl;
             break;
         }
         case '^':{
-            cout << "¬ведите 2 число" << endl;
-            cin >> b;
+            pressb
             cout << "(a^b)= " << (a ^ b) << endl;
             break;
         }
         case '|':{
-            cout << "¬ведите 2 число" << endl;
-            cin >> b;
+            pressb
             cout << "(a|b)= " << (a | b) << endl;
             break;
         }
         case '%':{
-            cout << "¬ведите 2 число" << endl;
-            cin >> b;
+            pressb
             cout << "(a%b)= " << (a % b) << endl;
             break;
         }
