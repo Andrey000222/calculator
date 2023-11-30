@@ -1,74 +1,78 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
-#define pressb {cout << "Ââåäèòå 2 ÷èñëî" << endl; cin >> b;}
+#define pressb {cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2 Ñ‡Ð¸ÑÐ»Ð¾" << endl; cin >> b;}
+#define summ cout<< "(" << a << c << b << ") = " 
 int main()
 {
     setlocale(LC_ALL, "");
-    char c=0;
+    char c,run;
     int a, b;
     float d, e;
-    cout << "Ââåäèòå 1 ÷èñëî" << endl ;
-    cin >> a;
-    cout << "Ââåäèòå çíàê èëè ?" << endl;
-    cin >> c ;
-    switch (c){
-        case '+':{
+    do {
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ 1 Ñ‡Ð¸ÑÐ»Ð¾" << endl;
+        cin >> a;
+        cout << "Ð²Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð·Ð½Ð°Ðº Ð¸Ð»Ð¸ ? (ÑÐ¿Ð¸ÑÐ¾Ðº ÐºÐ¾Ð¼Ð°Ð½Ð´)" << endl;
+        cin >> c;
+        switch (c) {
+        case '+': {
             pressb;
             cout << "(a+b)= " << (a + b) << endl;
             break;
         }
-        case '-':{
+        case '-': {
             pressb
-            cout << "(a-b)= " << (a - b) << endl;
+                cout << "(a-b)= " << (a - b) << endl;
             break;
         }
-        case '*':{
+        case '*': {
             pressb
-            cout << "(a*b)= " << (a * b) << endl;
+                cout << "(a*b)= " << (a * b) << endl;
             break;
         }
-        case '/':{
+        case '/': {
             pressb
-            d = a;
+                d = a;
             e = b;
             cout << "(a/b)= " << (d / e) << endl;
             break;
         }
-        case '&':{
+        case '&': {
             pressb
-            std::cout << "(a&b)= " << (a & b) << endl;
+                std::cout << "(a&b)= " << (a & b) << endl;
             break;
         }
-        case '^':{
+        case '^': {
             pressb
-            cout << "(a^b)= " << (a ^ b) << endl;
+                cout << "(a^b)= " << (a ^ b) << endl;
             break;
         }
-        case '|':{
+        case '|': {
             pressb
-            cout << "(a|b)= " << (a | b) << endl;
+                cout << "(a|b)= " << (a | b) << endl;
             break;
         }
-        case '%':{
+        case '%': {
             pressb
-            cout << "(a%b)= " << (a % b) << endl;
+                cout << "(a%b)= " << (a % b) << endl;
             break;
         }
         case '?': {
             cout
-                << "+ - Ñëîæèòü" << endl
-                << "- - Âû÷åñòü" << endl
-                << "* - Óìíîæèòü" << endl
-                << "/ - Ðàçäåëèòü" << endl
-                << "% - Îñòàòîê îò äåëåíèÿ (mod)" << endl
-                << "& - Ïîáèòîâîå È" << endl                   
-                << "^ - Ïîáèòîâàÿ ýêñêëþçèâíàÿ OR" << endl
-                << "| - Áèòîâàÿ èíêëþçèâíàÿ ÈËÈ" << endl << endl;
+                << "+ - ÑÐ»Ð¾Ð¶ÐµÐ½Ð¸Ðµ" << endl
+                << "- - Ð²Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ" << endl
+                << "* - ÑƒÐ¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ" << endl
+                << "/ - Ð´ÐµÐ»ÐµÐ½Ð¸Ðµ" << endl
+                << "% - Ð¾ÑÑ‚Ð°Ñ‚Ð¾Ðº Ð¾Ñ‚ Ð´ÐµÐ»ÐµÐ½Ð¸Ñ (mod)" << endl
+                << "& - ÐºÐ¾Ð½ÑŒÑŽÐ½ÐºÑ†Ð¸Ñ" << endl
+                << "^ - Ð¿Ð¾Ñ€Ð°Ð·Ñ€ÑÐ´Ð½Ð¾Ðµ Ð¸ÑÐºÐ»ÑŽÑ‡ÐµÐ½Ð¸Ðµ" << endl
+                << "| - Ð´Ð¸Ð·ÑŒÑŽÐ½ÐºÑ†Ð¸Ñ" << endl << endl;
             break;
         }
         default:
             break;
-    }
-    main();
+        }
+        cout << "Ð´Ð»Ñ Ð¿Ñ€Ð¾Ð´Ð¾Ð»Ð¶ÐµÐ½Ð¸Ñ Ð½Ð°Ð¶Ð¼Ð¸Ñ‚Ðµ n Ð´Ð»Ñ Ð²Ñ‹Ñ…Ð¾Ð´Ð° q" << endl;
+        cin >> run;
+    } while (run != 'q');
     return 0;
 }
