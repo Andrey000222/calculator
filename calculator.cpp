@@ -1,7 +1,5 @@
 ﻿#include <iostream>
 using namespace std;
-#define pressb {cout << "Введите 2 число" << endl; cin >> b;}
-#define summ cout<< "(" << a << c << b << ") = " 
 int main()
 {
     setlocale(LC_ALL, "");
