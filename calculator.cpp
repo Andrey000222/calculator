@@ -13,47 +13,41 @@ int main()
         cin >> a;
         cout << "введите знак или ? (список команд)" << endl;
         cin >> c;
+        cout << "Введите 2 число" << endl;
+        cin >> b;
         switch (c) {
         case '+': {
-            pressb;
             cout << "(a+b)= " << (a + b) << endl;
             break;
         }
         case '-': {
-            pressb
-                cout << "(a-b)= " << (a - b) << endl;
+            cout << "(a-b)= " << (a - b) << endl;
             break;
         }
         case '*': {
-            pressb
-                cout << "(a*b)= " << (a * b) << endl;
+            cout << "(a*b)= " << (a * b) << endl;
             break;
         }
         case '/': {
-            pressb
-                d = a;
+            d = a;
             e = b;
             cout << "(a/b)= " << (d / e) << endl;
             break;
         }
         case '&': {
-            pressb
-                std::cout << "(a&b)= " << (a & b) << endl;
+            cout << "(a&b)= " << (a & b) << endl;
             break;
         }
         case '^': {
-            pressb
-                cout << "(a^b)= " << (a ^ b) << endl;
+            cout << "(a^b)= " << (a ^ b) << endl;
             break;
         }
         case '|': {
-            pressb
-                cout << "(a|b)= " << (a | b) << endl;
+            cout << "(a|b)= " << (a | b) << endl;
             break;
         }
         case '%': {
-            pressb
-                cout << "(a%b)= " << (a % b) << endl;
+            cout << "(a%b)= " << (a % b) << endl;
             break;
         }
         case '?': {
